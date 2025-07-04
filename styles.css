@@ -59,3 +59,38 @@
   --var-radius-24: 24px;
   --var-radius-full: 9999px;
 }
+
+html {
+  font-family: var(--var-font-family-sans);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--var-light-gradient);
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: var(--var-spacing-800) auto;
+}
+
+.title {
+  background-color: var(--var-color-neutral-0);
+  border: 1px solid var(--var-color-neutral-200);
+  border-radius: var(--var-radius-full);
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 0.2);
+  padding: var(--var-spacing-150) var(--var-spacing-200);
+}
+
+.title__logo-wrapper {
+  align-items: end;
+  display: inline-block;
+}
+
+.title__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
